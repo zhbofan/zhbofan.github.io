@@ -1,28 +1,25 @@
-.card-image{
-    height: 300px;
-    width: auto;
+.card-img-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)
 }
 
-#cardtitle2{
-    color:black;
+#index_title {
+    text-align: center;
+    text-decoration: solid;
 }
 
-#cardtext2a{
-    color: black;
+#index_subtitle {
+    text-align: center;
 }
 
-#cardtext2b{
-    color: black;
+.card-title{
+    text-align: center;
+    text-decoration: solid;
 }
 
-#cardtitle3{
-    color: black;
-}
-
-#cardtext3a{
-    color: black;
-}
-
-#cardtext3b{
-    color: black;
+.card-text{
+    text-align: center;
 }
