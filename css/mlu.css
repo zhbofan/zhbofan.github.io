@@ -22,10 +22,12 @@
 }
 
 .card-title{
+    color: rgb(255, 68, 0);
     text-align: center;
     text-decoration: solid;
 }
 
 .card-text{
+    color: rgb(255, 119, 0);
     text-align: center;
 }
