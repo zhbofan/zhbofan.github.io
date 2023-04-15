@@ -11,15 +11,202 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
     crossorigin=""></script>
+    <link rel="icon" type="image/png" href="images/tabicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mlu.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>Xin'anzhuang Bone Fragments</title>
 </head>
 
 <body onload="mapLoad()">
 
-    <div class="container mt-3">
-        <h1>Map API Example</h1>
-        <div id="map"></div>
+    <div id="nav-placeholder">
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://zhbofan.github.io">
+                <img src="images/navimg.svg" alt="Logo" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="archaeology.html">Archaeology</a></li>
+                        <li><a class="dropdown-item" href="#">Paleography</a></li>
+                        <li><a class="dropdown-item" href="#">Text</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Other</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://github.com/zhbofan/DIGS20005" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      DIGS20005
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://github.com/zhbofan/DIGS20005/tree/main/DigitalChalkboard">Digital Chalkboard</a></li>
+                      <li><a class="dropdown-item" href="https://github.com/zhbofan/DIGS20005/tree/main/HelloWorld">Assignments</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Other Codes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="poems.html">Poems</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
     </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+                    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContent" aria-expanded="false" aria-controls="tocContents">
+                        Table of Content
+                    </button>
+                    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+                    <hr class="d-none d-md-block my-2 ms-3">
+                    <div class="collapse bd-toc-collapse" id="tocContents">
+                        <nav id="TableofContents">
+                            <ul>
+                                <li>
+                                    <a href="#abstract" class="active">Abstract</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <article class="col-md-8 col-lg-9 col-sm-12 results" id="articleBody">
+                <h1 class="view-page-title">Xin'anzhuang Bone Fragments</h1>
+                <hr class="d-none d-md-block my-2 ms-3">
+                <div class="section mt-25"></div>
+                <div class="section">
+                    <h3 id="abstract">Abstract</h3>
+                    <p class="has-dropcap">In 2007, a great number of bone fragments were excavated in Xin’anzhuang, Anyang. The excavation uncovered four ashpit units, H144, H221, H46, and H179. H144 alone generated 9188 pieces of skeletons and fragments, approximately 496kg. 20% of the H144 fragments, mainly cattle and deer bones, exhibit degrees of manufacture wear, leading the archaeologists to speculate that Xin’anzhuang was a part of the Tiesanlu large-scale bone workshop (a site located merely 60m to the east of Xin’anzhuang) in operation during Yinxu Phase II to IV (c. 1188-1045BC). For the cattle bone fragments, zooarchaeological identification shows that the fragments were mainly extracted from limb bones, with the radius and tibia being the most present elements. Examining the raw material selection, utilization, and manufacturing at the Xin’anzhuang site based on a close observation of the bone fragments would give answers to 1) the estimated production scale; 2) the degree of standardization of the manufacturing process; 3) the question of utilization vs. re-utilization of the bone fragments: in other words, were some of these fragments the leftover offcuts stored in the pits for further re-utilization as raw materials?</p>
+                    <p>This paper focuses on a sample of 883 identified cattle bone fragments with manufacturing wear, presumably rescaled and then hand-drawn on paper skeletal element templates. One of our aims is to digitize the scanned records of skeletal fragments into quantifiable vector shape objects. The digitization involves the use of ArcGIS, by treating the scanned templates as a “map” and then “plotting” the polygons of bone fragments onto the polyline templates. The advantage of digitizing the fragments in this way is that useful secondary faunal analyses such as the calculations of MNE (minimum number of elements) and MNI (minimum number of individuals; some use MAU, minimum animal units) can be easily performed utilizing some geospatial processing features offered by the software. The methodology will be presented in full, along with some problems with the records, the method itself, and suggestions for further improvement. </p>
+                </div>
+                <hr class="d-none d-md-block my-2 ms-3">
+                <div class="section">
+                    <h3>Keywords</h3>
+                    <div class="row">
+                        <div class="col">
+                            <p class="break-word">
+                                <Strong>Location</Strong>
+                                <br>
+                                Xin'anzhuang
+                                • 
+                                Yinxu
+                                • 
+                                Anyang
+                                •
+                                Henan
+                                •
+                                China
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="break-word">
+                                <strong>Date</strong>
+                                <br>
+                                Yinxu Period (Phase II - IV)
+                                •
+                                Late Shang Dynasty (1200 - 1045 BC)
+                                •
+                                Bronze Age
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="break-word">
+                                <strong>Method</strong>
+                                <br>
+                                Zooarchaeology
+                                •
+                                Faunal studies
+                                •
+                                MNE
+                                •
+                                Digital Humanities
+                                •
+                                ArcGIS
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="break-word">
+                                <strong>Research</strong>
+                                <br>
+                                Craft Production
+                                •
+                                Bone Fragments
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-none d-md-block my-2 ms-3">
+                <div class="section">
+                    <h3>The Locus: Xin'anzhuang West</h3>
+                    <div id="map"></div>
+                </div>
+                <div class="section">
+                    <dl class="row">
+                        <dt class="col-sm-3">Excavation Date</dt>
+                        <dd class="col-sm-9">2007</dd>
+                  
+                        <dt class="col-sm-3">Institutions</dt>
+                        <dd class="col-sm-9">
+                            <a href="http://kaogu.cssn.cn/zwb/zgshkxykgyjsgk/jgsz/pcjg/aygzz/">
+                                <li>Anyang Archaeology Team, Institute of Archaeology, CASS</li>
+                            </a>
+                            <a href="http://www.cckf.org/zh">
+                                <li>Chiang Ching-kuo Foundation for International Scholarly Exchange</li>
+                            </a>
+                            <a href="https://www1.ihp.sinica.edu.tw/en">
+                                <li>The Institute of History and Philology, Academia Sinica</li>
+                            </a>
+                        </dd>
+                  
+                        <dt class="col-sm-3">Individuals</dt>
+                        <dd class="col-sm-9">
+                            <li>Yue Zhanwei (CASS)</li>
+                            <li>Yung-ti Li (University of Chicago)</li>
+                            <li>...</li>
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="row">
+          <div class="col">
+            <span class="text-muted">Bofan Zhang</span>
+          </div>
+          <div class="col">
+            <span class="text-muted">zhbofan@uchicago.edu</span>
+          </div>
+          <div class="col">
+            <span class="text-muted">Beijing</span>
+          </div>
+        </div>
+    </footer>
+
 
     <script src="js/mapAPI.js"></script>
 

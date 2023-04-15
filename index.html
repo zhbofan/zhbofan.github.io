@@ -35,7 +35,7 @@
                         Projects
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Archaeology</a></li>
+                        <li><a class="dropdown-item" href="archaeology.html">Archaeology</a></li>
                         <li><a class="dropdown-item" href="#">Paleography</a></li>
                         <li><a class="dropdown-item" href="#">Text</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -58,8 +58,9 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <a href="wikiAPI.html">
+                    <button type="button" class="btn btn-dark">wikiAPI</button>
+                  </a>
                 </form>
               </div>
             </div>
@@ -75,56 +76,66 @@
           <p class="display-6" id="index_subtitle">(Bofan's digging hole...)</p>
       </div>
 
-      <div class="container mt-5">
-        <div id="title">Wiki API Example</div>
-        <!-- User input field -->
-        <form>
-          <div class="row">
-            <div class="col">
-              <input id="searchTerm" type="text" class="form-control" placeholder="Enter your search term here...">
-              <button class="btn btn-outline-success" type="submit" onclick="wikiAPI()">Search</button>
-            </div>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="archaeology.html">
+              <img src="images/cardimg1.png" class="card-img" alt="cardimg1">
+              <div class="card-img-overlay">
+                <h5 class="card-title container-fluid display-1" id="cardtitle1">Archaeology</h5>
+                <p class="card-text container-fluid" id="cardtext1a">a looter's pit with the shape of my heart</p>
+                <p class="card-text container-fluid" id="cardtext1b"><small>HPKM10002, Anyang, 1934</small></p>
+              </div>
+            </a>
           </div>
-        </form>
-      </div>
-
-      <div class="container-fluid" id="content">
-        <div class="card text-bg-dark container-fluid" id="card1">
-            <img src="images/cardimg1.png" class="card-img" alt="cardimg1">
-            <div class="card-img-overlay">
-            <h5 class="card-title container-fluid display-1" id="cardtitle1">Archaeology</h5>
-            <p class="card-text container-fluid" id="cardtext1a">a looter's pit with the shape of my heart</p>
-            <p class="card-text container-fluid" id="cardtext1b"><small>HPKM10002, Anyang, 1934</small></p>
-            </div>
-        </div>
-        
-        <div class="card text-bg-dark container-fluid" id="card2">
+          <div class="carousel-item">
             <img src="images/cardimg2a.jpeg" class="card-img" alt="cardimg2a">
             <div class="card-img-overlay">
               <h5 class="card-title container-fluid display-1" id="cardtitle2">Paleography</h5>
               <p class="card-text container-fluid" id="cardtext2a">rejoined inscribed fragments of my face</p>
               <p class="card-text container-fluid" id="cardtext2b"><small><em>Heji-</em>9950</small></p>
             </div>
-        </div>
-
-        <div class="card text-bg-dark container-fluid" id="card3">
+          </div>
+          <div class="carousel-item">
             <img src="images/cardimg3.jpeg" class="card-img" alt="cardimg3">
             <div class="card-img-overlay">
               <h5 class="card-title container-fluid display-1" id="cardtitle3">Text</h5>
               <p class="card-text container-fluid" id="cardtext3a">copying for the sake of copying</p>
               <p class="card-text container-fluid" id="cardtext3b"><small>@ Qiu Zhijie, <em>One-thousand-time Copy of Lantingxu</em>, 1990-1997</small></p>
             </div>
-        </div>
-
-        <div class="card text-bg-dark container-fluid" id="card4">
+          </div>
+          <div class="carousel-item">
             <img src="images/cardimg4.jpeg" class="card-img" alt="cardimg4">
             <div class="card-img-overlay">
               <h5 class="card-title container-fluid display-1" id="cardtitle4">Poems</h5>
               <p class="card-text container-fluid" id="cardtext4a">a wandering bronze</p>
               <p class="card-text container-fluid" id="cardtext4b"><small>@ Timothy Zhang, who says this shadow was me</small></p>
             </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+      <footer class="footer mt-auto py-3 bg-light">
+        <div class="row">
+          <div class="col">
+            <span class="text-muted">Bofan Zhang</span>
+          </div>
+          <div class="col">
+            <span class="text-muted">zhbofan@uchicago.edu</span>
+          </div>
+          <div class="col">
+            <span class="text-muted">Beijing</span>
+          </div>
+        </div>
+      </footer>
 
         <script src="js/wikiAPI.js"></script>
     </body>

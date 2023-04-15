@@ -15,10 +15,12 @@
 #index_title {
     text-align: center;
     text-decoration: solid;
+    padding-bottom: 20px;
 }
 
 #index_subtitle {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .card-title{
@@ -29,5 +31,9 @@
 
 .card-text{
     color: rgb(255, 119, 0);
+    text-align: center;
+}
+
+footer{
     text-align: center;
 }
