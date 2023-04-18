@@ -9,10 +9,10 @@ function lastItem() {
         output.push(a.value) // push the input value to the array
     };
 
-    //console.log(input)
-    //console.log(k)
+    console.log(input)
+    console.log(k)
 
-    document.getElementById("input").innerText = k;
+    document.getElementById("Yourinput").innerText = k;
     document.getElementById("output1").innerText = "The Last Item: " + output.sort()[output.length - 1];
     // output.sort() --> sort the output array in alphabetic order
     // [output.length - 1] --> access the last object in the array

@@ -214,3 +214,16 @@ function addElements(){
     }
 }
 
+/* Array: an object with an indexed list of elements.
+Standard example with mixed data types;
+Methods:
+.push(addThisValue)
+.indexOf()
+.pop()
+for (element of newArray) {console.log(index, element)}
+
+newArray.length = 0 // reassign the array;
+
+
+*/
+
