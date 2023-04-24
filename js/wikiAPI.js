@@ -21,14 +21,22 @@ function wikiAPI(){
     
     connect.onload = function () {
         var wikiObject = JSON.parse(this.response);
-        //console.log(wikiObject);
-        //console.log(wikiObject.query.pages);
+        console.log(wikiObject);
+        console.log(wikiObject.query.pages);
         var pages = wikiObject.query.pages;
         for (i in pages) {
-            var newDiv = document.createElement("div");
-            newDiv.setAttribute('class', 'row h4');
-            document.getElementById("wiki").appendChild(newDiv);
-            newDiv.innerText = pages[i].title;
+            // var newDiv = document.createElement("div");
+            // newDiv.setAttribute('class', 'row h4');
+            // document.getElementById("wiki").appendChild(newDiv);
+            // newDiv.innerText = pages[i].title;
+            // https://en.wikipedia.org/wiki/
+
+            var newa = document.createElement("a");
+            newa.setAttribute('class', 'row h4');
+            newa.setAttribute('id', 'query_'+i);
+            newa.setAttribute('href', 'https://en.wikipedia.org/wiki/' + pages[i].title);
+            document.getElementById("wiki").appendChild(newa);
+            newa.innerText = pages[i].title
         };
     };
 
