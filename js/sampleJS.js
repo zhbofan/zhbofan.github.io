@@ -69,9 +69,9 @@ function evalNumber(){
 // changeTitle()
 
 function changeTitle(){
-    let selectedElement = document.getElementById("poems_title");
+    let selectedElement = document.getElementById("JsSandbox_title");
     console.log(selectedElement);
-    selectedElement.innerText = "Counter-Poems";
+    selectedElement.innerText = "No Hello World for JS";
 }
 
 // a function that displays the current minute in the div.
@@ -88,7 +88,7 @@ function currentMinute(){
 // a button that when clicked makes an element disappear.
 function disappear(){
     
-    let selectedElement = document.getElementById("poem_revolution");
+    let selectedElement = document.getElementById("JsSandbox_title");
     console.log(selectedElement);
     selectedElement.style.display = "none";
 }

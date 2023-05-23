@@ -1,0 +1,158 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>My Little Underground</title>
+      <link rel="icon" type="image/png" href="images/tabicon.png">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/mlu.css"><script src="https://code.jquery.com/jquery-3.5.0.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script></head>
+   <body>
+
+      <div id="nav-placeholder"></div>
+
+      <div id="subHead">
+         <div class="container-fluid">
+            <div class="col d-none d-xl-block">
+               <div class="my-4"><a id="splashTitle" href="https://ochre.lib.uchicago.edu/RSTI/">
+                     <h1>Ras Shamra Tablet Inventory</h1></a></div>
+            </div>
+         </div>
+      </div>
+      <div id="globalIdDescr" class="container-fluid">
+         <div id="identificationXSL">
+            <h2>RS 13.012</h2>
+         </div>
+         <div id="citationXSL" class="pt-3">
+            Citation URL:  https://pi.lib.uchicago.edu/1001/org/ochre/24fdf4f5-0426-4715-86f2-5ba7331ff093
+            </div>
+         <hr class="d-none d-md-block my-2 ms-3">
+         <div id="descriptionHeading" class="sectionHeading">
+            <h4>Description</h4>
+         </div>
+         <div id="description">Tablet, Alphabetic Ugaritic</div>
+      </div>
+      <div>
+         <hr class="d-none d-md-block my-2 ms-3">
+         <div class="container-fluid" id="metadata">
+            <h4>Metadata</h4>
+            <div class="section">
+               <dl class="row">
+                  <dt class="col-sm-3">Dataset</dt>
+                  <dd class="col-sm-9">OCHRE/RSTI</dd>
+                  <dt class="col-sm-3">Description</dt>
+                  <dd class="col-sm-9">Ras Shamra Tablet Inventory</dd>
+                  <dt class="col-sm-3">Publisher</dt>
+                  <dd class="col-sm-9">OCHRE</dd>
+                  <dt class="col-sm-3">Identifier</dt>
+                  <dd class="col-sm-9">https://pi.lib.uchicago.edu/1001/org/ochre/24fdf4f5-0426-4715-86f2-5ba7331ff093</dd>
+                  <dt class="col-sm-3">Language</dt>
+                  <dd class="col-sm-9">en</dd>
+               </dl>
+            </div>
+         </div>
+         <hr class="d-none d-md-block my-2 ms-3">
+         <div class="container-fluid" id="spatialUnit">
+            <h4>Spatial Unit</h4>
+            <div class="section">
+               <dl class="row">
+                  <dt class="col-sm-3">Identification</dt>
+                  <dd class="col-sm-9">RS 13.012</dd>
+                  <dt class="col-sm-3">Description</dt>
+                  <dd class="col-sm-9">Tablet, Alphabetic Ugaritic</dd>
+                  <dt class="col-sm-3">Coordinates</dt>
+                  <dd class="col-sm-9">
+                     <li> Lat: 
+                        35.602059</li>
+                     <li> Lon: 
+                        35.785487</li>
+                  </dd>
+               </dl>
+            </div>
+            <div class="section">
+               <h5>Map</h5>
+               <div id="map" style="height:60vh; width:80vh; position: relative;"></div><script>
+                    var latLng = [35.602059, 35.785487];
+                    var map = L.map('map').setView(latLng, 15);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '@; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                    maxZoom: 19}).addTo(map);
+                    L.marker(latLng).addTo(map).bindPopup('RS 13.012');
+                </script></div>
+            <hr class="d-none d-md-block my-2 ms-3">
+            <div class="container-fluid" id="properties">
+               <h4>Properties</h4>
+               <div>
+                  <ul>
+                     <li><span>Full TEO Findspot</span>: <span>Palais Royal, pièce 1 (Archives Ouest), p.t. 8 à 3,0</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Museum Number</span>: <span>DO 3700</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Publication</span>: <span>PRU 2: 73 (Syria 28 [1951], p. 38, no 12)</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>KTU reference</span>: <span>KTU 4.122</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Size</span>: <span>63 x 63 x 24</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Classification</span>: <span>Registered item</span><div>
+                           <ul>
+                              <li><span>Object type</span>: <span>Tablet</span></li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul>
+                              <li><span>Length</span>: <span>63</span></li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul>
+                              <li><span>Width</span>: <span>63</span></li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul>
+                              <li><span>Thickness</span>: <span>24</span></li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul>
+                              <li><span>Excavation season</span>: <span>0013</span></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Associated text</span>: <span>RS 13.012</span></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><span>Topographic point</span>: <span>13:0008</span></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/nav.js"></script>
+      <script src="js/wikiAPI.js"></script>
+
+   </body>
+</html>

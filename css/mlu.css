@@ -15,25 +15,57 @@
 #index_title {
     text-align: center;
     text-decoration: solid;
-    padding-bottom: 20px;
-}
-
-#index_subtitle {
-    text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 }
 
 .card-title{
-    color: rgb(255, 68, 0);
+    color: rgb(146, 227, 177);
+    text-align: center;
+    text-decoration: solid;
+    padding-bottom: 10%;
+}
+
+#footer-placeholder{
+    padding-top: 4%;
+    text-align: center;
+}
+
+#cv_title{
+    padding-top: 18px;
     text-align: center;
     text-decoration: solid;
 }
 
-.card-text{
-    color: rgb(255, 119, 0);
-    text-align: center;
+a{
+    color:black;
+    text-decoration: none;
 }
 
-footer{
-    text-align: center;
+#TableofContent{
+    padding-top: 60px;
+}
+
+#locusInfo{
+    padding-top: 25px;
+}
+
+#poems_title{
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#poems_subtitle{
+    padding-bottom: 20px
+}
+
+.poemTitle{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.vl{
+    border-right: 1px solid #ccc;
+    height: 100%;
+    margin-left: -1px;
+    margin-right: -1px;
 }

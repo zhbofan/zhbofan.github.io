@@ -8,98 +8,97 @@
         <link rel="icon" type="image/png" href="images/tabicon.png">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/poem.css">
-        <script src="js/sampleJS.js"></script>
+        <link rel="stylesheet" href="css/mlu.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/navimg.svg" alt="Logo" width="30" height="24">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="archaeology.html">Archaeology</a></li>
-                        <li><a class="dropdown-item" href="#">Paleography</a></li>
-                        <li><a class="dropdown-item" href="#">Text</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Other</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="https://github.com/zhbofan/DIGS20005" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      DIGS20005
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="https://github.com/zhbofan/DIGS20005/tree/main/DigitalChalkboard">Digital Chalkboard</a></li>
-                      <li><a class="dropdown-item" href="https://github.com/zhbofan/DIGS20005/tree/main/HelloWorld">Assignments</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Other Codes</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Poems</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+        <div id="nav-placeholder"></div>
+
+        <div class="container">
+          <h1 class="display-1" id="poems_title">Poems</h1>
+        </div>
+
+        <div class="container">
+          <h1 class="display-6" id="poems_subtitle"> - Selections: 2015-2023</h1>
+          <hr>
+        </div>
+        
+        <div class = "container">
+            <div class="row">
+
+                <div class="col-md-5">
+                  <div class="row">
+                    <div class="container poemTitle">
+                      <h2>革命</h2>
+                    </div>
+                    <div class="container">
+                      <p>
+                        他在红色的人群中<br>
+                        寻找一个红色的人<br>
+                        所有红色的人都说<br>
+                        我们这里没有红色的人<br>
+                        只有红色<br>
+                      </p>
+                      <p class="text-muted">
+                        2019<br>
+                        北京<br>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-1 d-none d-md-block">
+                  <div class="vl"></div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="container poemTitle">
+                    <h2>追杀</h2>
+                  
+                  </div>
+                  <div class="container">
+                    <p>
+                      我父亲<br>
+                      凌晨三点<br>
+                      准时被人追杀<br>
+                    </p>
+                    <p>
+                      听他的惨叫<br>
+                      追杀他的人<br>
+                      应该是拿着屠刀<br>
+                    </p>
+                    <p>
+                      好像还不是一个人<br>
+                      是一股黑恶势力<br>
+                      得有六七个<br>
+                    </p>
+                    <p>
+                      开着坦克飞机<br>
+                      扛着洋枪土炮 浩浩荡荡<br>
+                      追上来了<br>
+                    </p>
+                    <p>
+                      凌晨三点<br>
+                      我准时<br>
+                      追杀我父亲<br>
+                    </p>
+                    <p class="text-muted">
+                      2019.07<br>
+                      北京<br>
+                    </p>
+                  </div>
               </div>
             </div>
-        </nav>
-
-        <div class="container-fluid pt-5">
-            <h1 class="display-1" id="poems_title">Poems</h1>
         </div>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="js/nav.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/wikiAPI.js"></script>
         
-        <div class = "background">
-        </div>
-        
-        <div class = "container-fluid" id="poem_revolution">
-            <h1 id = "title">革命</h1>
-
-            <p> 他在红色的人群中 </p>
-            <p> 寻找一个红色的人 </p>
-            <p>所有红色的人都说</p>
-            <p>我们这里没有红色的人</p>
-            <p>只有红色</p>
-        
-        </div>
-
-        <div class="container mt-5">
-          <div class="h3">Sample JS</div>
-          <button type="button" class="btn btn-primary" onclick="conditional()">Conditional</button>
-          <button type="button" class="btn btn-primary" onclick="scopeValues()">Variables</button>
-          <button type="button" class="btn btn-primary" onclick="howdy()">Greetings!</button>
-          <button type="button" class="btn btn-primary" onclick="evalNumber()">Evaluate Number</button>
-          <button type="button" class="btn btn-warning" onclick="changeTitle()">Change Title</button>
-          <a href="DigitalChalkboard.html">
-            <button type="button" class="btn btn-primary">Digital Chalkboard</button>
-          </a>
-        </div>
-
-        <div class="container mt-5">
-          <div class="h3" id = "current_minute">Display the Current Minute</div>
-          <button type="button" class="btn btn-warning" onclick="currentMinute()">Current Minute</button>
-        </div>
-
-        <div class="container mt-5">
-          <div class="h3" id = "disappear">Makes an element disappear</div>
-          <button type="button" class="btn btn-warning" onclick="disappear()">Hide the Poem!</button>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     </body>
+</html>
